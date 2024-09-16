@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Text in Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="box-one">
+            <img src="logo.jpg" alt="logo" height="60px" width="60px">
+            <div class="icon1">
+                <i class="fas fa-undo" id="undo-icon" style="cursor:pointer;font-size:30px;color:dimgray;margin-left:500px"></i>
+                <p style="margin-left:500px;color:dimgray">Undo</p>
+            </div>
+            <div class="icon2">
+                <i class="fas fa-redo" id="redo-icon" style="cursor:pointer;font-size:30px;color:dimgray;margin-left:50px"></i>
+                <p style="margin-left:50px;color:dimgray">Redo</p>
+            </div>
+        </div>
+        <br>
+        <canvas id="myCanvas" class="myCanvas"></canvas>
+        <div class="box-two">
+            <button class="font-button" onclick="displayfont()">Font<i class="fa fa-angle-down" style="margin-left:10px;font-size:18px"></i></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p class="style1" id="style1"><b>Arial</b></p>
+                    <p class="style2" id="style2"><b>Cursive</b></p>
+                    <p class="style3" id="style3"><b>Times New Roman</b></p>
+                    <p class="style4" id="style4"><b>Courier New</b></p>
+                    <p class="style5" id="style5"><b>Verdana</b></p>
+                </div>
+            </div>
+            <button class="font-size"><span style="margin-top:5px;cursor:pointer" id="minus-button">&#8722;</span><span style="margin-left:8px;margin-top:5px">20</span><span style="margin-left:8px;margin-top:5px;cursor:pointer" id="plus-button">+</span></button>
+            <button class="font-style"><i class="fa fa-bold" id="bold-icon" style="cursor:pointer"></i> <i class="fa fa-italic" id="italic-icon" style="cursor:pointer"></i> <i class="fa fa-align-center" id="center-icon" style="cursor:pointer"></i> <i class="fa fa-underline" id="underline-icon" style="cursor:pointer"></i></button>
+        </div>
+        <hr>
+        <div class="box-three">
+            <textarea id="textInput" placeholder=" T add text" style="background-color:lavender;margin-left:580px;border:1px solid black;border-radius:20px"></textarea>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
