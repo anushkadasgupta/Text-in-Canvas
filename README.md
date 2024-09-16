@@ -1,1 +1,2 @@
-# Text-in-Canvas
+# Text-in-Canvas                                                    
+Text edit using HTML Canvas
